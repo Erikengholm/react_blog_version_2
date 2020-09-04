@@ -1,0 +1,23 @@
+.högerKollumn{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+.col{
+    width: 33%;
+}
+
+.Row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.row{
+    display: flex;
+}
+.card{
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    overflow: hidden;
+}

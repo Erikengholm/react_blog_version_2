@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    background-color: #f1f1f1 
+}
+
+#backcover{
+    background-image: url('/Bilder/road.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    padding: 20px;
+    max-width:100%;
+    max-height: 100%;
+}
+
+header{
+    background-color: #ffffff;
+    padding: 30px;
+}
+header h1{
+    text-align: center;
+    font-size: 60px;
+    color:#000000;
+    margin:1.5px;
+}
+*{
+    box-sizing: border-box;
+}
+h2{
+    color: #000000 ;
+    margin: 1.5 0px;
+}
+
+footer{
+    background-color: #dddddd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+@media(max-width: 800px){
+    .vänsterKollumn{
+        width: 120%;
+   }
+
+    .högerKollumn{
+        display: none;
+   }
+}

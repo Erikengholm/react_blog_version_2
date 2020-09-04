@@ -1,0 +1,40 @@
+#aaa{
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    border: 1px black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: -20px;
+}
+.blogMenyBox{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    background:rgba(0,0,0, 0.8);
+}
+.blogMenyBox:hover{
+    background:rgba(0,0,0, 1);
+}
+#leftblogMenyBox:hover{
+    background:rgba(0,0,0, 1);
+    border-bottom-left-radius: 25px;
+}
+#leftblogMenyBox{
+    border-bottom-left-radius: 25px;
+
+}
+#rightblogMenyBox:hover{
+    background:rgba(0,0,0, 1);
+    border-bottom-right-radius: 25px;
+}
+#rightblogMenyBox{
+    border-bottom-right-radius: 25px;
+}
+.blogMenyBox p{
+    color:white;
+}
