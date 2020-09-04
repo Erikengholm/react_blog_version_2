@@ -1,0 +1,20 @@
+.left-Side-Content {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  max-height: 450px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

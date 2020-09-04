@@ -1,0 +1,51 @@
+.log-In-Text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.log-In-Text input {
+  width: 55%;
+  height: 22%;
+}
+.login {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  height: 40%;
+  width: 40%;
+  background-color: white;
+  z-index: 100;
+}
+.log-Buttons{
+    display: flex;
+    width: 100%;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+}
+.log-Input {
+  display: flex;
+  width: 100%;
+  height: 33%;
+}
+.log-Logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.log-Logo img {
+  width: 33%;
+  height: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.log-In {
+  backdrop-filter: blur(6px);
+  background: rgba(1, 1, 1, 0.5);
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+}
