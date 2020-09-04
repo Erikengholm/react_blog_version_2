@@ -1,1 +1,1 @@
-export {default} from './Sido_menu'
+export {default} from './Sido_Menu'

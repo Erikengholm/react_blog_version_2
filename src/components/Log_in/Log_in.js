@@ -1,27 +1,29 @@
 import React,{useState} from 'react'
-import Log_in_text from './Log_in_text'
+import LogInText from './Log_In_Text'
 import './style_Log_in.css'
-import Log_in_Button from './Log_in_Button'
+import LogInButton from './Log_In_Button'
 
 
 const Log_in = (props) =>{
+    
     const [title, setTitle] = useState('')
-
-return (
+    
+    return (
     <div className="Login" style={{display: props.log ? "block":"none",filter:"blur(0px)"}}>
 
     <div className="log-Logo">
-        <img src="/Bilder/log.png"/>
+        <img src="/Bilder/log.png" alt="logo.png"/>
     </div>
+    
     <div className="log-input">
-       <Log_in_text first={true} text={setTitle}/>
+       <LogInText first={true} text={setTitle}/>
            
-       <Log_in_text first={false}/>
+       <LogInText first={false}/>
     </div>
+    
     <div className="log-Buttons">
-        <Log_in_Button first={true} text={title}/>
-        <Log_in_Button first={false} showLogin={props.showLogin}/>
-
+        <LogInButton first={true} text={title}/>
+        <LogInButton first={false} showLogin={props.showLogin}/>
     </div>
     </div>
 )};

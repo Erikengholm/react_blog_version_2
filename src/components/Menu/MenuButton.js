@@ -7,20 +7,19 @@ class MenuButton extends Component {
         this.state = {
            Path: "",
            comp_id:"",
-           className:"",
            name:"",
-           LOG:{}
         };
     }
+    
     componentDidMount() {
-        this.check_state(this.props.number);
+        this.check_state();
         this.timer = setInterval(() => this.check_state(), 50000);
     }         
     
-    check_state = (number) => {
-        switch(number){
+    check_state = () => {
+        switch(this.props.number){
             case 1:
-              this.setState({Path:"Home()"})
+                this.setState({Path:"Home()"})
                 this.setState({comp_id:"leftblogMenyBox"})
                 this.setState({name:"Home"})
                 break;
@@ -53,15 +52,24 @@ class MenuButton extends Component {
                 this.setState({comp_id:"rightblogMenyBox"})
                 this.setState({name:"logga ut"})
                 break;
-
+            default:
+                this.setState({Path:""})
+                this.setState({comp_id:""})
+                this.setState({name:""})
+            break;
         }
-      }    
+    }
+       
     render() {
-     
         return (
         <button onClick={this.state.Path}  id={this.state.comp_id} className="blogMenyBox">
-        <p> <b><u>{this.state.name}</u></b></p>
-     </button>
-     );}
+            <p> 
+                <b>
+                    <u>{this.state.name}</u>
+                </b>
+            </p>
+        </button>
+        );
+    }
 }
 export default MenuButton

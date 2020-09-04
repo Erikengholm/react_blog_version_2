@@ -38,12 +38,3 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
-@media(max-width: 800px){
-    .vänsterKollumn{
-        width: 120%;
-   }
-
-    .högerKollumn{
-        display: none;
-   }
-}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Follow_us_icon from  './Follow_us_icon'
+import FollowUsIcon from  './Follow_Us_Icon'
 import './style_side_menu.css'
 import Row from 'react-bootstrap/Row'
 function Follow_us_Row(props) {
@@ -7,16 +7,18 @@ function Follow_us_Row(props) {
     switch(row_id){
         case 1:
         return <Row>
-        <Follow_us_icon path="https://www.youtube.com//" icon="Youtube.png"/>
-        <Follow_us_icon path={"https://www.twitter.com/"} icon="twitter.png"/>
-        <Follow_us_icon path={"https://www.facebook.com/"} icon="facebook.png"/>
-         </Row>
-        break;
-    case 2:   return <Row>
-    <Follow_us_icon path={"https://www.instagram.com/"} icon={"insta.png"}/>
-    <Follow_us_icon path={"https://www.gmail.com/"} icon={"gmail.jpg"}/>
-    <Follow_us_icon path={"https://www.reddit.com/"} icon={"reddit.jpg"}/>
-    </Row>
- break;
-  }}
+                    <FollowUsIcon path="https://www.youtube.com//" icon="Youtube.png"/>
+                    <FollowUsIcon path={"https://www.twitter.com/"} icon="twitter.png"/>
+                    <FollowUsIcon path={"https://www.facebook.com/"} icon="facebook.png"/>
+                </Row>
+    
+        case 2:   
+        return <Row>
+                    <FollowUsIcon path={"https://www.instagram.com/"} icon={"insta.png"}/>
+                    <FollowUsIcon path={"https://www.gmail.com/"} icon={"gmail.jpg"}/>
+                    <FollowUsIcon path={"https://www.reddit.com/"} icon={"reddit.jpg"}/>
+                </Row>
+        default:return <Row><p>hej</p></Row>
+    }
+}
 export default Follow_us_Row

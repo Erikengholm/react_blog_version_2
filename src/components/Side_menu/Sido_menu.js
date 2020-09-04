@@ -1,14 +1,16 @@
 import React from 'react'
-import Sido_menu_holder from './Sido_menu_holder'
-import Follow_us from './Follow_us'
+import SidoMenuHolder from './Sido_Menu_Holder'
+import FollowUs from './Follow_Us'
 import './style_side_menu.css'
-
-const Sido_menu = () =>(
+const Sido_menu = () =>{
+let number =0;
+return (
     <div className="högerKollumn">
-        <Sido_menu_holder number={1} />
+        <SidoMenuHolder number={++number} />
 
-        <Sido_menu_holder number={2}/>
-        <Follow_us/>
-         </div>
-)
+        <SidoMenuHolder number={++number}/>
+        
+        <FollowUs/>
+    </div>
+)}
 export default Sido_menu

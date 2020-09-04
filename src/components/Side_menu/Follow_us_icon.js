@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 const Follow_us_icon = ({path ,icon}) =>(
     <Col>
          <a href={path}>
-         <img  src={"/Bilder/"+icon} className="icon_img"/>
+            <img src={"/Bilder/"+icon} className="icon_img" alt={icon}/>
          </a>
     </Col>
 );
