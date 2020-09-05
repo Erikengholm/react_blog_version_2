@@ -39,13 +39,14 @@
   padding-top: 1%;
   padding-bottom: 1%;
 }
-.log-In {
+.blur-Overlay{
   backdrop-filter: blur(6px);
-  background: rgba(1, 1, 1, 0.5);
+  background: rgba(1,1,1,0.5);
   left: 0;
   top: 0;
   position: fixed;
-  width: 100vw;
+  width:  100vw;
   height: 100vh;
   z-index: 99999;
-}
+} 
+
